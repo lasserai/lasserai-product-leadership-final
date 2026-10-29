@@ -1,29 +1,30 @@
 # Financial Model: [Fable / Meridian / your initiative]
 
-> Module 5 · Master Product Financials & Strategic Bets, ★ Deliverable 5
->
-> The business case for funding your bet, and the explicit kill criteria that would tell you to stop.
+> Module 5 · Build the Business Case and the Kill Line, ★ Deliverable 5
 
 ## 1. Business case
 
-_Why this initiative is worth funding over the alternatives. Include the key unit economics assumptions, CAC, LTV, payback period, where relevant._
-
 | Assumption | Value | Source / rationale |
 |---|---|---|
-| CAC | _____ | _____ |
-| LTV | _____ | _____ |
-| Payback period | _____ | _____ |
-| Investment required | _____ | _____ |
-| Expected return | _____ | _____ |
+| Strategic bet | We bet reducing required daily-report fields from 14 to 4 will reduce reporting time from 15 minutes to 5 minutes per day, increasing field adoption among foremen and superintendents. More consistent field data should improve issue resolution and strengthen customer retention and Enterprise expansion. The financial mechanism is improved customer value leading to lower churn and greater expansion revenue. | _____ |
+| What the case rests on | 1. Highest risk: reporting friction is a major cause of low adoption; if workers mainly prefer texts and cameras because they are familiar and universal, simplifying forms may not change behavior. 2. Reducing fields saves 10 minutes per report without reducing data quality. 3. Higher adoption improves project outcomes enough to influence renewals or upsells. 4. Engineering can deliver the change without materially delaying other priorities. Validate these assumptions with field pilots and customer data. | _____ |
+| Expected return | Per user: save 10 minutes per daily report, or about 43 hours per year assuming 5 reporting days per week and 50 working weeks. At scale: for every 100 regular field users, that represents approximately 4,333 hours saved annually. The financial return comes from demonstrable retention or expansion lift, but cannot yet be responsibly quantified without account counts, contract value, churn, and evidence linking adoption to renewals. | _____ |
 
-> **The case in one paragraph:** _____
+> **The case in one paragraph:** Strategic Rock: Simplify daily field reporting from 14 required fields to 4. 1. The strategic bet We bet that reducing daily reporting from 14 required fields to 4 will make Meridian easier for field foremen and superintendents to use, increasing adoption and improving the completeness of project records. Better field data should help project teams identify and resolve issues sooner, creating potential retention and Enterprise expansion benefits. We will fund a 90-day controlled pilot before committing to a full rollout. The pilot must demonstrate measurable user benefits and provide evidence of a credible financial return. 2. The assumptions — ranked by risk Rank	Assumption	How we will test it 1 — Critical	Reporting friction is a major cause of low field adoption.	Compare adoption for pilot teams with comparable control teams. 2	Reducing required fields from 14 to 4 cuts reporting time by at least 30%.	Measure reporting time before and during the pilot. 3	Increased adoption improves issue documentation and customer outcomes.	Track documented issue resolution and time to resolution. 4	Better field outcomes improve retention or Enterprise expansion enough to justify investment.	Compare renewal signals and expansion opportunities, then validate with account-level financial data. The largest risk is that simpler forms save time but do not change adoption or customer economics. 3. Expected return Operational value Required fields 14 → 4 71% fewer required fields Reporting time target 15 → 5 min 10 minutes saved per report Adoption target 30% → 70% Weekly active eligible field users Issue documentation target 40% → 80% Issues resolved with a documented record Assuming five reports per week over 50 working weeks, saving 10 minutes per report creates approximately 43 hours saved per regular field user per year. Across 100 regular users, that is about 4,167 hours annually. Financial return The financial benefit will be calculated from verified customer outcomes, not assumed in advance: - Retention benefit: eligible revenue retained due to a measured reduction in churn. - Expansion benefit: incremental gross profit from attributable Enterprise upgrades. - Net return: incremental gross profit minus build, rollout, and ongoing operating costs. - Payback: initial investment divided by verified incremental monthly gross profit. We do not yet have the build cost, account-level contract values, gross margins, or evidence of churn and expansion lift. Therefore, a credible dollar ROI or payback period cannot yet be claimed. These inputs must be established before full-rollout funding. 4. The kill criterion At the end of the 90-day pilot, compare results against a comparable control group. Stop the rollout and reallocate the uncommitted engineering budget if either: - Weekly active field-user adoption improves by less than 10 percentage points versus the control group; or - Average reporting time falls by less than 30% versus baseline. Even if these operational thresholds are met, do not approve full rollout unless the updated financial model shows a credible path to positive incremental return and an acceptable payback period under a downside scenario. The Foundations product lead owns the decision, with Finance validating the economics before further funding. Funding verdict FUND WITH ONE CONDITION: approve the 90-day pilot only, with full rollout conditional on meeting the adoption and reporting-time thresholds and demonstrating a financially credible return. This limits the initial commitment, tests the most important assumption with real field data, and prevents operational improvements from being mistaken for proven financial value.
 
 ## 2. Kill criteria
 
-_The specific signals that would tell you this bet is no longer worth pursuing. Be explicit about the metric, the threshold, and the timeline._
-
-> If **[metric]** does not reach **[threshold]** by **[date]**, we will **[decision]**.
+> **Kill criterion:** Stop further rollout funding if, after a 90-day pilot, weekly active field-user adoption has not improved by at least 10 percentage points versus a comparable control group, or reporting time has not fallen by at least 30%. The consequence: cancel the next rollout phase and reallocate the uncommitted engineering budget to the highest-performing Foundations priority before committing additional capacity.
 
 ## Link to full artifact
 
 _[link to this deliverable in your repo]_
+
+## Lab notes
+
+**Make your evaluation and funding decision**
+
+- **What assumption is doing the most work? If this number is 20-30% off, what changes?:** The 8% upsell rate drives the return: 400 Standard accounts × 8% = 32 upsells and $896,000 ARR. If upsell is 20–30% lower, it falls to 6.4%–5.6%, producing 25.6–22.4 expected upsells and $716,800–$627,200 ARR. The 20% reduction alone takes the rate below the 7% kill threshold.
+- **What is the structural problem in this case? Look past the headline numbers for something that does not hold up on closer inspection.:** The case treats $28,000 in Enterprise ARR per upsell as fully incremental value, without accounting for Enterprise churn of 12%, the existing revenue from Standard accounts, or the cost of serving the added Enterprise customers. Also, the claimed 2.4-month payback does not follow from ARR alone: $896,000 ÷ 12 = about $74,667 monthly ARR, so $180,000 ÷ $74,667 ≈ 2.4 months of gross ARR, not necessarily cash payback or profit payback.
+- **Is the kill criterion complete and actionable? Does it name the consequence, or hand the decision back to the room?:** Partly. It sets a measurable threshold—upsell below 7% by end of Q3—and a consequence: pause the feature and reallocate Q4 engineering capacity. But it lacks a measurement definition and a clear decision owner, and waiting until Q3 may leave little time to act before Q4.
+- **Your verdict: FUND / FUND WITH ONE CONDITION / DO NOT FUND. If a condition, name it; otherwise explain in one sentence.:** FUND WITH ONE CONDITION. Release funding only with a staged pilot that validates the 8% upsell assumption against a defined control group, with a pre-agreed Q3 measurement method and decision owner; do not commit the full build based on the unvalidated $896,000 ARR projection.
