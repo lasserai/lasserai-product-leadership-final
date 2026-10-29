@@ -1,23 +1,15 @@
 # Individual Insights: Strategy Development Process
 
-> Module 6 · Leverage AI Tools for Leadership Execution
->
-> Your personal reflection on building the strategy end to end.
+> Module 6 · Lead the Team That Builds with AI
 
 ## Friction points
 
-_What was the hardest part of building this strategy, and how did you work through it?_
-
-> _____
+> The most challenging topic is usually dealing with people that may not same interests with me but are needed to accomplish some goal. Usually one-on-one honest discussion to understand where the common ground helps out moving forward.
 
 ## Key learnings
 
-_A few surprising discoveries or insights you gained from the course overall._
-
-> _____
+> Strategic bets, hard nos, shortest tests, killing criteria  I've been already started using and practicing with my teams.
 
 ## "Aha!" moment
 
-_Your main "aha" moment during the project process._
-
-> _____
+> The hard nos and also killing criteria besides success criteria beforehand helps out to avoid unnecessary pondering when executing.
